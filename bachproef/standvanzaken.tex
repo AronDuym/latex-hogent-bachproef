@@ -7,45 +7,68 @@
 
 % Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
 
-Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
+\section{Literatuurstudie}%
+\label{sec:literatuurstudieBP}
 
-Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz.\ naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\LaTeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin (narratieve referentie), gebruik je \texttt{$\backslash${}textcite\{\}}. Soms is de auteursnaam niet expliciet een onderdeel van de zin, dan gebruik je \texttt{$\backslash${}autocite\{\}} (referentie tussen haakjes). Dit gebruik je bv.~bij een citaat, of om in het bijschrift van een overgenomen afbeelding, broncode, tabel, enz. te verwijzen naar de bron. In de volgende paragraaf een voorbeeld van elk.
+In het eerste hoofdstuk van de literatuurstudie worden enkele belangrijke termen omtrent ERP en integratie tools gedefinieerd. Vervolgens wordt het belang van ERP in grote ondernemingen besproken samen met een korte geschiedenis van hoe bedrijven vroeger werkten voor het ontstaan van ERP en hoe andere systemen geëvolueerd zijn naar het ERP-systeem. Vervolgens worden de problemen en uitdagingen in verband met BPM aangekaart. Tenslotte wordt er ook kort besproken welke verbeteringen er nog kunnen worden toegepast op ERP om het proces nog te optimaliseren en te verbeteren aan de hand van nieuwe technologieën.
 
-\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
+\subsection{Definities}
+\label{sec:DefinitiesBP}
 
-Let er ook op: het \texttt{cite}-commando voor de punt, dus binnen de zin. Je verwijst meteen naar een bron in de eerste zin die erop gebaseerd is, dus niet pas op het einde van een paragraaf.
+\textbf{ERP}: Een ERP, ofwel enterprise resource planning verwijst naar de software die bedrijven gebruiken voor het uitvoeren van hun dagdagelijkse administratieve bedrijfsactiviteiten, zoals in de boekhouding of bij de aankoop of verkoop van goederen. Wat ook vaak gekoppeld wordt aan ERP is enterprise performance management, software die helpt bij het plannen, budgetteren, voorspellen en rapporteren van de financiële resultaten van een organisatie. \autocite{Oracle2017}
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.8\textwidth]{grail.jpg}
-  \caption[Voorbeeld figuur.]{\label{fig:grail}Voorbeeld van invoegen van een figuur. Zorg altijd voor een uitgebreid bijschrift dat de figuur volledig beschrijft zonder in de tekst te moeten gaan zoeken. Vergeet ook je bronvermelding niet!}
-\end{figure}
+\vspace{\baselineskip}
 
-\begin{listing}
-  \begin{minted}{python}
-    import pandas as pd
-    import seaborn as sns
+ERP-systemen zorgen ervoor dat een grote hoeveelheid aan bedrijfsprocessen worden samengebracht en gesynchroniseerd met elkaar. Door de gedeelde transactiegegevens van een organisatie uit meerdere bronnen te verzamelen, elimineren ERP-systemen dubbele gegevens en bieden ze gegevensintegriteit met één enkele bron van waarheid. \autocite{Oracle2017}
 
-    penguins = sns.load_dataset('penguins')
-    sns.relplot(data=penguins, x="flipper_length_mm", y="bill_length_mm", hue="species")
-  \end{minted}
-  \caption[Voorbeeld codefragment]{Voorbeeld van het invoegen van een codefragment.}
-\end{listing}
+\vspace{\baselineskip}
 
-\lipsum[7-20]
+Volgens \textcite{Oracle2017}: zijn ERP-systemen essentieel bij grote of internationale bedrijven voor de correcte verwerking van alle administratieve taken binnen deze ondernemingen. \textcite{Oracle2017} beweert zelf dat ERP even onmisbaar is als elektriciteit voor bedrijven van deze schaal.
 
-\begin{table}
-  \centering
-  \begin{tabular}{lcr}
-    \toprule
-    \textbf{Kolom 1} & \textbf{Kolom 2} & \textbf{Kolom 3} \\
-    $\alpha$         & $\beta$          & $\gamma$         \\
-    \midrule
-    A                & 10.230           & a                \\
-    B                & 45.678           & b                \\
-    C                & 99.987           & c                \\
-    \bottomrule
-  \end{tabular}
-  \caption[Voorbeeld tabel]{\label{tab:example}Voorbeeld van een tabel.}
-\end{table}
+\vspace{\baselineskip}
+
+\textbf{Integratie tool}: Een integratie tool is een instrument of software dat gebruikt wordt voor het combineren van gegevens uit verschillende ongelijksoortige bronnen om gebruikers een overzichtelijk beeld te geven van deze informatie. Integratie tools brengen kleinere componenten in één systeem samen zodat deze als één geheel kunnen samenwerken. \autocite{Microsoft2024}
+
+\vspace{\baselineskip}
+
+Volgens \textcite{Microsoft2024} helpen integratie tools bij het consolideren van alle soorten gegevens, gezien de groei, het volume en de verschillende formaten. \textcite{Microsoft2024} beweert ook door deze te combineren om te werken met één set gegevens, dat bedrijven interne afdelingen kunnen helpen om oog in oog te staan met strategieën en zakelijke beslissingen en bruikbare en overtuigende zakelijke inzichten te produceren voor succes op korte en lange termijn.
+
+\vspace{\baselineskip}
+
+\textbf{BPMS}: BPMS, ofwel Business Process Management Systems zijn softwareplatformen die de definitie, uitvoering en opvolging van bedrijfsprocessen ondersteunen. Een BPMS maakt het mogelijk om informatie te observeren en te loggen over de bedrijfsprocessen binnen het bedrijf. \autocite{grigori2004business}
+
+\vspace{\baselineskip}
+
+Volgens \textcite{grigori2004business} kan een goede analyse van de logs uit een BPMS belangrijke informatie opleveren en bedrijven helpen om de kwaliteit van hun bedrijfsprocessen en diensten te verbeteren.
+
+
+
+
+\subsection{Het belang van ERP-systemen in een ondernemening}
+\label{sec:Het belang van ERP-systemen in een ondernemeningBP}
+
+ERP-systemen combineren het concept van bedrijfsproces integratie met een technisch platform dat bestaat uit een geïntegreerde database en modules voor verschillende functionele domeinen. ERP-systemen hebben hun oorsprong in de vroege jaren van de informatica in de jaren 1940 en zijn geëvolueerd via geïntegreerde controletools (1960s) en Material Requirements Planning (MRP)-systemen (1970s en 1980s). In de jaren 1990 tot 2000 kenden ERP-systemen aanvankelijk een monolithische architectuur, die vanaf de 2010s plaatsmaakte voor postmoderne ERP-systemen met meerdere platformen. \autocite{katuu2020enterprise}
+
+\vspace{\baselineskip}
+
+Deze evolutie weerspiegelt de aanpassingen van ERP-systemen aan interne en externe uitdagingen binnen ondernemingen, zoals stijgende verwachtingen van stakeholders en klanten, terwijl beschikbare middelen afnemen. Voor effectieve integratie en waardecreatie moeten ERP-systemen ingebed worden in een technologisch ecosysteem dat rekening houdt met institutionele strategieën en operaties. Hierbij is het essentieel om over te stappen van traditionele monolithische systemen naar cloudgebaseerde en postmoderne ERP-platformen die compatibel zijn met innovaties zoals kunstmatige intelligentie en Robotic Process Automation. \autocite{katuu2020enterprise}
+
+\vspace{\baselineskip}
+
+Deze inzichten onderstrepen de noodzaak voor organisaties om hun ERP-systemen voortdurend te innoveren en af te stemmen op nieuwe technologische mogelijkheden.
+
+\vspace{\baselineskip}
+
+ERP speelt ook een cruciale rol bij het integreren van informatie en processen binnen en tussen de verschillende afdelingen van een onderneming. Dit is met name waardevol voor grote organisaties met complexe structuren en uiteenlopende operaties. Oorspronkelijk waren ERP-systemen gericht op het ondersteunen van interne operationele processen, maar hun functionaliteit is aanzienlijk uitgebreid. Tegenwoordig functioneren ze als platforms die de gehele bedrijfsvoering kunnen verbinden en integreren met andere bedrijfstoepassingen, zoals Supply Chain Management (SCM) en Customer Relationship Management (CRM). \autocite{sheik2020enterprise}
+
+\vspace{\baselineskip}
+
+De brede toepasbaarheid van ERP-systemen heeft hun implementatie over diverse industrieën gestimuleerd en geleid tot toenemende aandacht van management experts en onderzoekers. Hoewel er al veel vooruitgang is geboekt, biedt het onderwerp nog steeds talrijke mogelijkheden voor verder onderzoek vanuit verschillende invalshoeken. Verdere studies kunnen bijdragen aan een beter begrip en innovatieve toepassingen van ERP binnen uiteenlopende organisatorische contexten. \autocite{sheik2020enterprise}
+
+
+
+\subsection{Mogelijke verbeteringen in het ERP-proces}
+\label{sec:Mogelijke verbeteringen in het ERP-procesBP}
+
+Het bewustzijn van organisaties over veranderingen in ERP-systemen speelt een cruciale rol in het verhogen van klanttevredenheid. Slimme apparaten die realtime gegevens verschaffen over producten, kwaliteit en transport hebben niet alleen een aanzienlijke impact op de klantenservice, maar verbeteren ook het algemene organisatie management. Vooral de integratie van cloud-ERP met IoT biedt veelbelovende mogelijkheden voor zowel efficiënter management als verbeterde klantgerichte dienstverlening. \autocite{tavana2020iot}
 
