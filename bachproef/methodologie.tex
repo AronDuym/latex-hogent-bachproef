@@ -26,21 +26,131 @@
 %% Maak voor elke fase (behalve het literatuuronderzoek) een NIEUW HOOFDSTUK aan
 %% en geef het een gepaste titel.
 
+Dit hoofdstuk behandelt de onderzoeksmethodologie aan de hand van de kennis en informatie die verzameld werd in de literatuurstudie. We beginnen met het opstellen van een requirementsanalyse gevolgd door het opstellen van een long- en shortlist om tenslotte af te sluiten met het bespreken van de proof of concept van dit onderzoek.
+
+
 \section{Requirements-analyse}
 \label{sec:RequirementsAnalyseBP}
 
-De eerste stap in het effectieve onderzoek is het opstellen van een requirement-analyse, waarbij de eisen voor de integratie tools worden opgelijst en gerangschikt volgens de MoSCoW-methode. Voor het opstellen van een concrete en volledige lijst worden twee bronnen geraadpleegd. Ten eerste wordt voorgaande literatuurstudie gebruikt om bepaalde noodzakelijke eisen te identificeren. Daarna worden gesprekken gevoerd met de interne stakeholders van Axians, zodat eventuele aanvullingen, nieuwe eisen en exacte parameters worden toegevoegd. Tenslotte wordt er nog één dag voorzien voor het finaliseren van de requirements-analyse.
+De eerste stap in deze vergelijkende studie is het opstellen van een requirementsanalyse, waarbij de eisen voor de integratie tools worden opgelijst. Deze requirements zijn eerst opgesplitst in de vorm van functionele en niet functionele requirements. De opgelijste requirements werden in samenspraak met Axians opgesteld.
+
+\begin{enumerate}
+    \item \textbf{Functionele requirements}
+    \begin{itemize}
+        \item \textbf{Integratie van meerdere systemen:} Het platform moet in staat zijn om verschillende applicaties en met elkaar te verbinden (zoals ERP, CRM, HRM, legacy-systemen, databases) met elkaar te verbinden.
+        \item \textbf{Automatisering van processen:} Manuele administratieve taken moeten geautomatiseerd kunnen worden om fouten te verminderen en bepaalde processen te versnellen.
+        \item \textbf{Data-transformatie:} Het platform moet data makkelijk kunnen converteren tussen verschillende formaten en structuren (bijv. XML ↔ JSON, CSV ↔ database records).
+        \item \textbf{Connectoren en adapters:} Het platform moet kant-en-klare connectoren bieden voor veelgebruikte systemen (bijv. SAP, Microsoft Dynamics, Oracle).
+        \item \textbf{Hybrid en multi-cloud ondersteuning:} Het platform moet applicaties kunnen integreren die draaien in verschillende omgevingen (on-premise, private cloud, public cloud).
+        \item \textbf{Monitoring en logging:} Het systeem moet real-time monitoring en logboek functionaliteiten bieden om fouten en prestaties bij te houden.
+    \end{itemize}
+
+    \item \textbf{Niet Functionele requirements}
+    \begin{itemize}
+        \item \textbf{Veiligheid en betrouwbaarheid:} De tool moet voldoen aan de relevante beveiligingsnormen.
+        \item \textbf{Prestaties:} De tool moet performant zijn.
+        \item \textbf{Onderhoudsvriendelijkheid:} De tool moet eenvoudig te updaten en te onderhouden zijn met minimale downtime.
+        \item \textbf{Kostenbeheersing:} De tool moet betaalbaar zijn met een transparant kostenmodel (licenties, onderhoud, implementatie).
+        \item \textbf{Uitbreidbaarheid:} De tool moet eenvoudig uitbreidbaar zijn met nieuwe modules en integraties naarmate de organisatie groeit.
+        \item \textbf{Schaalbaarheid:} De tool moet eenvoudig schaalbaar zijn naargelang de wensen van de organisatie.
+    \end{itemize}
+\end{enumerate}
+
+Deze requirements worden nu aan de hand van de MoSCoW-methode verder onderverdeeld. De MoSCoW-methode is een prioriteringstechniek. Deze techniek wordt in softwareontwikkeling, management, bedrijfsanalyse en projectmanagement gebruikt om met stakeholders gezamenlijk tot een overeenkomst te komen over het belang en de prioriteit van alle opgesomde requirements. De term MOSCOW zelf is een acroniem afgeleid van de eerste letter van elk van de vier prioriteringscategorieën: M - Must have, S - Should have, C - Could have, W - Won't have. Hieronder worden elk van deze categorieën verder verduidelijkt.
+
+\vspace{\baselineskip}
+
+\textbf{Must have:} Dit betreft essentiële requirements die absoluut noodzakelijk zijn voor het slagen van het project. Ze vormen de kern van het systeem en kunnen onder geen enkele voorwaarde worden weggelaten.
+
+\vspace{\baselineskip}
+
+\textbf{Should have:} Deze requirements zijn belangrijk en dragen significant bij aan de werking en waarde van het systeem, maar zijn niet strikt noodzakelijk. Indien mogelijk worden ze geïmplementeerd, maar hun afwezigheid zal het project niet doen falen.
+
+\vspace{\baselineskip}
+
+\textbf{Could have:} Dit zijn gewenste, maar optionele requirements die extra waarde kunnen toevoegen, maar die niet zo belangrijk zijn. Ze worden enkel geïmplementeerd als er voldoende tijd en middelen beschikbaar zijn.
+
+\vspace{\baselineskip}
+
+\textbf{Won’t have:} Deze requirements worden bewust niet opgenomen in het project. (Deze categorie zal niet gebruikt worden voor dit onderzoek)
+
+\vspace{\baselineskip}
+
+\begin{enumerate}
+    \item \textbf{Must have}
+    \begin{itemize}
+        \item \textbf{Veiligheid en betrouwbaarheid:} De tool moet voldoen aan de relevante beveiligingsnormen.
+        \item \textbf{Kostenbeheersing:} De tool moet betaalbaar zijn met een transparant kostenmodel (licenties, onderhoud, implementatie).
+        \item \textbf{Uitbreidbaarheid:} De tool moet eenvoudig uitbreidbaar zijn met nieuwe modules en integraties naarmate de organisatie groeit.
+        \item \textbf{Schaalbaarheid:} De tool moet eenvoudig schaalbaar zijn naargelang de wensen van de organisatie.
+        \item \textbf{Integratie van meerdere systemen:} Het platform moet in staat zijn om verschillende applicaties en met elkaar te verbinden (zoals ERP, CRM, HRM, legacy-systemen, databases) met elkaar te verbinden.
+        \item \textbf{Automatisering van processen:} Manuele administratieve taken moeten geautomatiseerd kunnen worden om fouten te verminderen en bepaalde processen te versnellen.
+        \item \textbf{Connectoren en adapters:} Het platform moet kant-en-klare connectoren bieden voor veelgebruikte systemen (bijv. SAP, Microsoft Dynamics, Oracle).
+    \end{itemize}
+    \item \textbf{Should have}
+    \begin{itemize}
+        \item \textbf{Prestaties:} De tool moet performant zijn.
+        \item \textbf{Data-transformatie:} Het platform moet data makkelijk kunnen converteren tussen verschillende formaten en structuren (bijv. XML ↔ JSON, CSV ↔ database records).
+        \item \textbf{Hybrid en multi-cloud ondersteuning:} Het platform moet applicaties kunnen integreren die draaien in verschillende omgevingen (on-premise, private cloud, public cloud).
+    \end{itemize}
+    \item \textbf{Could have}
+    \begin{itemize}
+        \item \textbf{Onderhoudsvriendelijkheid:} De tool moet eenvoudig te updaten en te onderhouden zijn met minimale downtime.
+        \item \textbf{Monitoring en logging:} Het systeem moet real-time monitoring en logboek functionaliteiten bieden om fouten en prestaties bij te houden.
+    \end{itemize}
+\end{enumerate}
 
 \section{Longlist}
 \label{sec:LonglistBP}
 
-Na het samenstellen van een requirementsanalyse is het belangrijk een longlist van integratie tools en eventuele maatwerkoplossingen samen te stellen op basis van deze
-analyse en de informatie uit de literatuurstudie. Deze lijst wordt vervolgens gerangschikt aan de hand van de volledige lijst van requirements uit de requirements-analyse. Deze stap zal één dag in beslag nemen, afhankelijk van de grootte van de lijst requirements. De rangschikking wordt weergegeven in een tabel, waarbij de best scorende tools en maatwerkoplossingen zich bovenaan bevinden.
+De tweede stap in deze vergelijkende studie is het opstellen van een longlist, waarbij zoveel mogelijk tools en applicaties die in aanmerking komen voor onze vergelijkende studie worden opgelijst. Voor het opstellen van de longlist werd er gebruikgemaakt van de kennis verworven in de literatuurstudie en de requirements uit de requirementsanalyse om te zien welke tools en applicaties in aanmerking komen. Opmerking: de onderstaande tabel hecht nog geen waarde aan de volgorde van de opgesomde integratie tool services. Deze biedt enkel een visualisatie van het marktaanbod.
+
+\begin{table}[]
+    \begin{tabular}{|l|l|l|l|l|}
+    \hline
+    \textbf{Naam service}                            & \textbf{Ontwikkelaar} & \textbf{(Basis) Prijs}                                                        & \textbf{Beschikbare demo}  & \textbf{Opmerkingen}                                                                              \\ \hline
+    Zapier                                           & Zapier                & \$69,00 per maand op jaarbasis                                                & Ja                         & Prijs uitgaande van 2000 tasks per maand                                                          \\ \hline
+    IBM App Connect Enterpise                        & IBM                   & Basis \$83,00 per maand op jaarbasis                                          & Ja                         & Prijs uitgaande van 100000 API calls per jaar                                                     \\ \hline
+    Workato                                          & Workato               & Enkel via offerte                                                             & Enkel live demo            & /                                                                                                 \\ \hline
+    MuleSoft                                         & Salesforce (MuleSoft) & Enkel via offerte                                                             & Ja                         & /                                                                                                 \\ \hline
+    Oracle Cloud Infrastructure Integration Services & Oracle                & Geen vaste (basis)prijs, volledig afhankelijk van het verbruik van de user    & Ja                         & Prijs is verdeeld per categorie en elk product of service heeft zijn eigen unit of verbruik prijs \\ \hline
+    Boomi                                            & Dell Boomi            & \$99,00 (Pay-as-you-go) per maand + extra verbruik kosten / Enkel via offerte & Ja                         & Basisprijs is 99 dollar, maar er komen extra gebruikerskosten bij te pas                          \\ \hline
+    Microsoft Power Automate                         & Microsoft             & €14,00 per gebruiker per maand                                                & ja                         & /                                                                                                 \\ \hline
+    Informatica Intelligent Data Management Cloud    & Informatica           & Enkel via offerte                                                             & Nee, enkel video tutorials & Demo is enkel in de vorm van video's in het demo center van Informatica                           \\ \hline
+    TIBCO Cloud Integration                          & TIBCO                 & Enkel via offerte                                                             & Nee, enkel op aanvraag     & Er was vroeger een demoversie, maar deze wordt niet langer ondersteund                            \\ \hline
+    Jitterbit                                        & Jitterbit             & Enkel via offerte                                                             & Enkel live demo            & /                                                                                                 \\ \hline
+    APPSeConnect                                     & APPSeConnect          & Enkel via offerte                                                             & Ja                         & /                                                                                                 \\ \hline
+    WSO2 Integrator / Devant                         & WSO2                  & Integrator enkel via offerte. Devant \$300,00 (Pay-as-you-go)                 & Ja?                        & Onzeker over exacte werking demo                                                                  \\ \hline
+    \end{tabular}
+    \end{table}
 
 \section{Shortlist}
 \label{sec:ShortlistBP}
 
-Vervolgens, na het maken van een longlist, is de volgende stap in de methodologie het maken van een shortlist op basis van de longlist. Uit deze lijst zullen drie integratie tools of maatwerkoplossingen geselecteerd worden op basis van de vereisten uit de requirements-analyse. Deze drie tools zullen elk individueel verder onderzocht worden en uitgebreid besproken. Hierbij wordt er gekeken naar wat de functionaliteit is van elke tool, waarvoor de tool hoofdzakelijk wordt gebruikt, hoe de software in elkaar zit en het welke kosten er aan iedere tool verbonden zijn.
+Na het opstellen van de longlist is het tijd om over te gaan naar de voorlaatste stap in de methodologie: het definiëren van de shortlist. Voor het opstellen van de shortlist worden alle items van de longlist onderling met elkaar vergeleken op basis van de requirements uit de requirementsanalyse.
+
+\vspace{\baselineskip}
+
+Bij de vergelijking is het ook belangrijk om rekening te houden met enkele belangrijke factoren boven op de requirementsanalyse om een zo goed mogelijke shortlist op te stellen die op een zo objectief mogelijke manier vergeleken kan worden. Zo is het belangrijk dat de prijs van de integratie tool zichtbaar en transparant vermeld wordt op de website van de ontwikkelaar. Ook is het uiteraard noodzakelijk dat de ontwikkelaar een demo versie of een tijdelijke trial versie van de integratie tool software aanbiedt zodat deze software effectief getest kan worden in de proof of concept.
+
+%\vspace{\baselineskip}
+
+%Als laatste onderdeel van de shortlist wordt er ook nog dieper onderzoek gedaan over de geselecteerde integratie tools om een zo goed mogelijk beeld te scheppen van hun achtergrond, werking en functionaliteit.
+
+\vspace{\baselineskip}
+
+Uit de vergelijking van de longlist zijn de drie onderstaande integratie tools naar boven gekomen. Deze tools zullen vervolgens getest worden in de proof of concept voor de uitvoering van de vergelijkende studie:
+
+\begin{itemize}
+    \item \textbf{Zapier}
+    \item \textbf{Microsoft Power Automate}
+    \item \textbf{Boomi}
+\end{itemize}
+
+%TODO korte uitleg integratie tools
+
+
+
 
 \section{Proof of concept}
 \label{sec:Proof of conceptBP}
@@ -53,15 +163,36 @@ Voor de proof of concept van dit onderzoek zullen de integratie tools uit de sho
 \subsection{Manier van onderzoek}
 \label{sec:Manier van onderzoekBP}
 
-Bij de start van de proof of concept wordt er eerst samengezeten met de stakeholders van \\Axians om samen een praktische opdracht uit te werken die toepasselijk is om de integratie tools op een correcte manier te testen. Deze gesprekken en de feedbackloop voor het uitwerken van het plan van aanpak zal 7 dagen in beslag nemen. Na het opstellen van een praktische opdracht zullen de integratie tools individueel onderzocht worden om te testen hoe deze exact werken zodat er daarna vlot aan de proof of concept gewerkt kan worden. Tijdens deze praktische uitwerking wordt de exacte tijdsduur van de opdracht gelogd, terwijl iedere integratietool wordt geëvalueerd op basis van de criteria uit de requirements-analyse en persoonlijke ervaringen met iedere tool.
+Bij de start van de proof of concept is er eerst samengezeten met de stakeholders van Axians om samen een praktische opdracht uit te werken die toepasselijk is om de integratie tools op een correcte manier te testen en te vergelijken. Tijdens deze praktische uitwerking wordt de exacte tijdsduur van de opdrachten gelogd, terwijl iedere integratie tool wordt geëvalueerd op basis van de criteria uit de requirements-analyse en persoonlijke ervaringen met iedere integratie tool. Hierbij krijgt elk requirement uit de requirementsanalyse een score tussen 1 en 5.
 
-\section{Verwerking proof of concept data}
+\vspace{\baselineskip}
+
+Uit deze gesprekken kwamen volgende testscenario’s naar boven die getest zullen worden in de geselecteerde integratie tools van de shortlist:
+
+\begin{enumerate}
+    \item \textbf{Het overzetten van tijdsregistraties naar facturatie aan het einde van de maand.}
+    \begin{itemize}
+        \item Atlassian tempo -> Microsoft Business Central
+    \end{itemize}
+    \item \textbf{Klantgegevens uit een CRM (Custom Relationship Management) ophalen om te gebruiken bij het opstellen van een offerte.}
+    \begin{itemize}
+        \item Microsoft Dynamics 365 Sales -> Microsoft Business Central
+    \end{itemize}
+    \item \textbf{Maatwerk op een SQL Server sturen naar de Business Central.}
+    \begin{itemize}
+        \item SQL Server -> Microsoft Business Central
+    \end{itemize}
+\end{enumerate}
+
+Verder wordt er ook nog gekeken naar de aanwezigheid van bepaalde features en connectoren op basis van de requirements uit de requirementsanalyse.
+
+\subsection{Verwerking proof of concept data}
 \label{sec:Verwerking proof of concept dataBP}
 
-Na een theoretisch en praktisch onderzoek te doen naar de integratie tools worden de eindresultaten geëvalueerd. Hiervoor worden de eindproducten van iedere tool met elkaar vergeleken en krijgen ze elk een score op basis van vooropgestelde criteria uit de requirements-analyse en de persoonlijke feedback van de stakeholders van Axians. Indien de omzetting van een bedrijfsproces aan de hand van een integratie tool niet volledig is afgewerkt, wordt dit ook opgenomen in het rapport.
+Na het afwerken van het theoretisch en praktisch onderzoek naar de integratie tools worden de eindresultaten geëvalueerd. Hiervoor worden de eindproducten van iedere tool met elkaar vergeleken en krijgen ze elk een score op basis van vooropgestelde criteria uit de requirements-analyse. Indien de omzetting van een bedrijfsproces aan de hand van een integratie tool niet volledig is afgewerkt, wordt dit ook opgenomen in het rapport.
 
-\section{Conclusie proof of concept}
+\subsection{Conclusie proof of concept}
 \label{sec:Conclusie proof of conceptBP}
 
-Na het verwerken van de data en het evalueren van de integratie tools wordt in de laatste fase van de proof of concept conclusies getrokken zodat de sterktes en gebreken van iedere tool duidelijk worden blootgelegd. Vervolgens worden deze tools gerangschikt op basis van de theoretische en praktische vereisten uit de requirements-analyse. Hierbij wordt ook rekening gehouden met onderzoeksvraag en alle subvragen. Deze conclusies samen met alle bevindingen worden uiteindelijk dan voorgelegd aan de stakeholders van Axians als een eindrapport.
+In de volgende hoofdstukken wordt elke integratie tool onderling besproken aan de hand van de requirements uit de requirementsanalyse met de daarbij toegewezen score. De onderlinge score van elk requirement wordt hierbij verduidelijkt als ook hun sterktes en zwaktes aan de hand van de ervaringen uit de proof of concept. Hierbij wordt ook rekening gehouden met onderzoeksvraag en alle subvragen. Aan het einde van ieder hoofdstuk wordt er een tabel voorzien om de eindscores samen met de requirements samen te vatten en beter te visualiseren.
 
