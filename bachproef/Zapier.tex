@@ -1,19 +1,15 @@
 \chapter{\IfLanguageName{dutch}{Zapier}{Zapier}}
 \label{ch:Zapier}
 
+De tweede integratie tool waarvan de resultaten zullen besproken worden is Zapier. Hieronder worden de requirements individueel besproken en krijgen ze een score tussen 1 (voldoet niet aan de verwachtingen) en 5 (voldoet aan alle verwachtingen) toegewezen. Op het einde van het hoofdstuk worden alle requirements en hun scores samengevat en weergegeven in een tabel met enkele extra berekeningen om het vergelijkingsproces te vereenvoudigen.
+
 \section{Requirements}%
 \label{RequirementsZapier}
 
 \subsection{Must have}%
 \label{MustHaveZapier}
 
-\textbf{Veiligheid en betrouwbaarheid: De tool moet voldoen aan de relevante beveiligingsnormen.}
-
-\vspace{\baselineskip}
-
-\vspace{\baselineskip}
-
-\textbf{Kostenbeheersing: De tool moet betaalbaar zijn met een transparant kostenmodel (licenties, onderhoud, implementatie).}
+\textbf{Veiligheid en betrouwbaarheid: De tool moet voldoen aan de relevante beveiligingsnormen (Welbekende ISO-normen, data-encryptie, Europese GDPR-wetgeving compliance).}
 
 \vspace{\baselineskip}
 
@@ -29,15 +25,7 @@
 
 \vspace{\baselineskip}
 
-\textbf{Schaalbaarheid: De tool moet eenvoudig schaalbaar zijn naargelang de wensen van de organisatie.}
-
-\vspace{\baselineskip}
-
-
-
-\vspace{\baselineskip}
-
-\textbf{Integratie van meerdere systemen: Het platform moet in staat zijn om verschillende applicaties en met elkaar te verbinden (zoals ERP, CRM, HRM, legacy-systemen, databases) met elkaar te verbinden.}
+\textbf{Integratie van meerdere systemen: Het platform moet in staat zijn om verschillende applicaties en systemen met elkaar te verbinden (zoals ERP, CRM, HRM, legacy-systemen, databases) met elkaar te verbinden.}
 
 \vspace{\baselineskip}
 
@@ -52,24 +40,6 @@
 
 
 \vspace{\baselineskip}
-
-\textbf{Connectoren en adapters: Het platform moet kant-en-klare connectoren bieden voor veelgebruikte systemen (bijv. SAP, Microsoft Dynamics, Oracle).}
-
-\vspace{\baselineskip}
-
-De tweede integratie tool waarvan de resultaten zullen besproken worden is Zapier. Hieronder worden de requirements individueel besproken en krijgen ze hun score toegewezen. Op het einde van het hoofdstuk worden alle requirements en hun scores samengevat en weergegeven in een tabel met enkele extra berekeningen om het vergelijkingsproces te vereenvoudigen.
-
-\subsection{Should have}%
-\label{ShouldHaveZapier}
-
-\textbf{Prestaties: De tool moet performant zijn.}
-
-\vspace{\baselineskip}
-
-
-
-\vspace{\baselineskip}
-
 \textbf{Data-transformatie: Het platform moet data makkelijk kunnen converteren tussen verschillende formaten en structuren (bijv. XML ↔ JSON, CSV ↔ database records).}
 
 \vspace{\baselineskip}
@@ -78,14 +48,62 @@ De tweede integratie tool waarvan de resultaten zullen besproken worden is Zapie
 
 \vspace{\baselineskip}
 
-\textbf{Hybrid en multi-cloud ondersteuning: Het platform moet applicaties kunnen integreren die draaien in verschillende omgevingen (on-premise, private cloud, public cloud).}
+
+\textbf{Monitoring en logging: Het systeem moet real-time monitoring en logboek functionaliteiten bieden om fouten en prestaties bij te houden.}
 
 \vspace{\baselineskip}
 
 
 
-\subsection{Could have}%
-\label{CouldHaveZapier}
+\vspace{\baselineskip}
+
+\subsection{Should have}%
+\label{ShouldHaveZapier}
+
+\textbf{Kostenbeheersing: De tool moet betaalbaar zijn met een transparant kostenmodel (licenties, onderhoud, implementatie).}
+
+\vspace{\baselineskip}
+
+Op vlak van prijstransparantie scoort Zapier vrij goed. Het maakt gebruik van een abonnementsstructuur waarbij bijna alle betalende opties een vaste zichtbare prijs tonen. De klant kan ook kiezen om zich op maandelijkse en jaarlijkse intervals te abonneren voor de service met als voordeel dat de klant 33 \% korting krijgt op de totaalprijs indien gekozen wordt voor de jaarlijkse formule. Dit geeft de klant enorm veel flexibiliteit in hoe hij de service wil gebruiken. De prijs kan wel beïnvloed worden door de hoeveelheid tasks die de klant maandelijks wenst uit te voeren, maar dit kan op voorhand geselecteerd worden om zo de exacte prijs weer te geven.
+
+\vspace{\baselineskip}
+
+De abonnementsstructuur bestaat uit 3 opties waaruit de klant kan kiezen, elk aangepast naar de mate van specifieke doelgroepen. Hierbij werd uitgegaan van een verbruik van 2000 tasks per maand en aangerekend op maandelijkse basis (zonder de jaarkorting van 33 \%). Hieronder worden de 3 abonnement modellen kort toegelicht voor een idee te geven van hun schaal en wat ze exact aanbieden:
+
+\begin{itemize}
+    \item Professional: € 66,47 per maand gericht naar individuele gebruikers.
+    \item Team: € 93,60 per maand gericht naar bedrijven van teams tot en met 25 gebruikers.
+    \item Enterprise: Geen concrete prijs. Abonnement volledig afgestemd op de wensen van het bedrijf. Gericht naar zeer grote bedrijven met verschillende departementen die gebruik willen maken van de integratie tool.
+\end{itemize}
+
+Tenslotte is er ook de mogelijkheid om Zapier gratis voor 14 dagen uit te proberen om een inkijk te geven in het ecosysteem van Zapier. Na deze periode wordt het trial account behouden, maar worden alle Flows met premium features stopgezet en wordt het account omgezet naar een gratis versie.
+
+Voor dit requirement scoort Zapier een 4.
+
+\vspace{\baselineskip}
+
+\textbf{Schaalbaarheid: De tool moet eenvoudig schaalbaar zijn naargelang de wensen van de organisatie.}
+
+\vspace{\baselineskip}
+
+
+
+\vspace{\baselineskip}
+
+\textbf{Connectoren en adapters: Het platform moet kant-en-klare connectoren bieden voor veelgebruikte systemen (bijv. SAP, Microsoft Dynamics, Oracle).}
+\vspace{\baselineskip}
+
+
+
+\vspace{\baselineskip}
+
+\textbf{Prestaties: De tool moet performant zijn bij het uitvoeren van bepaalde veelgebruikte data integraties, maar niet alle data integratie processen.}
+
+\vspace{\baselineskip}
+
+
+
+\vspace{\baselineskip}
 
 \textbf{Onderhoudsvriendelijkheid: De tool moet eenvoudig te updaten en te onderhouden zijn met minimale downtime.}
 
@@ -95,39 +113,61 @@ De tweede integratie tool waarvan de resultaten zullen besproken worden is Zapie
 
 \vspace{\baselineskip}
 
-\textbf{Monitoring en logging: Het systeem moet real-time monitoring en logboek functionaliteiten bieden om fouten en prestaties bij te houden.}
+\subsection{Could have}%
+\label{CouldHaveZapier}
+
+\textbf{Hybrid en multi-cloud ondersteuning: Het platform moet applicaties kunnen integreren die draaien in verschillende omgevingen (on-premise, private cloud, public cloud).}
 
 \vspace{\baselineskip}
+
+
+
+\vspace{\baselineskip}
+
+\textbf{Low-code / no-code interface: Het platform beschikt over een low-code of no-code interface voor het aanmaken van data integraties.}
+
+\vspace{\baselineskip}
+
+Zapier biedt sterke low-code capaciteiten en een gebruiksvriendelijk interface die veel integraties mogelijk maakt zonder diepgaande technische kennis. Langs de no-code kant lijkt het requirement niet volledig haalbaar bij complexere scenario's en voor meer geadvanceerde data integraties is technische expertise tamelijk nodig.
+
+Voor dit requirement scoort Zapier een 4.
+
+\newpage
+
+\begin{landscape}
+
+
 
 \subsection{Eindoverzicht}%
 \label{EindoverzichtZapier}
 
-\begin{table}[htbp]
-    \centering
-    \resizebox{\textwidth}{!}{%
-    \begin{tabular}{|ll|}
-    \hline
-    \multicolumn{1}{|l|}{\textbf{Requirements uit de requirementsanalyse}}                                                                                                                                                     & \textbf{Score tussen 1 en 5} \\ \hline
-    \textbf{Must have}                                                                                                                                                                                                         &                              \\ \hline
-    \multicolumn{1}{|l|}{Veiligheid en betrouwbaarheid: De tool moet voldoen aan de relevante beveiligingsnormen.}                                                                                                             &                              \\ \hline
-    \multicolumn{1}{|l|}{Kostenbeheersing: De tool moet betaalbaar zijn met een transparant kostenmodel (licenties, onderhoud, implementatie).}                                                                                &                              \\ \hline
-    \multicolumn{1}{|l|}{Uitbreidbaarheid: De tool moet eenvoudig uitbreidbaar zijn met nieuwe modules en integraties naarmate de organisatie groeit.}                                                                         &                              \\ \hline
-    \multicolumn{1}{|l|}{Schaalbaarheid: De tool moet eenvoudig schaalbaar zijn naargelang de wensen van de organisatie.}                                                                                                      &                              \\ \hline
-    \multicolumn{1}{|l|}{Integratie van meerdere systemen: Het platform moet in staat zijn om verschillende applicaties en met elkaar te verbinden (zoals ERP, CRM, HRM, legacy-systemen, databases) met elkaar te verbinden.} &                              \\ \hline
-    \multicolumn{1}{|l|}{Automatisering van processen: Manuele administratieve taken moeten geautomatiseerd kunnen worden om fouten te verminderen en bepaalde processen te versnellen.}                                       &                              \\ \hline
-    \multicolumn{1}{|l|}{Connectoren en adapters: Het platform moet kant-en-klare connectoren bieden voor veelgebruikte systemen (bijv. SAP, Microsoft Dynamics, Oracle).}                                                     &                              \\ \hline
-    \textbf{Should have}                                                                                                                                                                                                       &                              \\ \hline
-    \multicolumn{1}{|l|}{Prestaties: De tool moet performant zijn.}                                                                                                                                                            &                              \\ \hline
-    \multicolumn{1}{|l|}{Data-transformatie: Het platform moet data makkelijk kunnen converteren tussen verschillende formaten en structuren (bijv. XML ↔ JSON, CSV ↔ database records).}                                      &                              \\ \hline
-    \multicolumn{1}{|l|}{Hybrid en multi-cloud ondersteuning: Het platform moet applicaties kunnen integreren die draaien in verschillende omgevingen (on-premise, private cloud, public cloud).}                              &                              \\ \hline
-    \textbf{Could have}                                                                                                                                                                                                        &                              \\ \hline
-    \multicolumn{1}{|l|}{Onderhoudsvriendelijkheid: De tool moet eenvoudig te updaten en te onderhouden zijn met minimale downtime.}                                                                                           &                              \\ \hline
-    \multicolumn{1}{|l|}{Monitoring en logging: Het systeem moet real-time monitoring en logboek functionaliteiten bieden om fouten en prestaties bij te houden.}                                                              &                              \\ \hline
-    \multicolumn{1}{|l|}{\textbf{Gemiddelde}}                                                                                                                                                                                  &                              \\ \hline
-    \multicolumn{1}{|l|}{\textbf{Mediaan}}                                                                                                                                                                                     &                              \\ \hline
-    \multicolumn{1}{|l|}{\textbf{Standaardafwijking}}                                                                                                                                                                          &                              \\ \hline
-    \multicolumn{1}{|l|}{\textbf{Variatiecoëfficient}}                                                                                                                                                                         &                              \\ \hline
-    \end{tabular}%
-    }
-    \caption{Zapier: Beoordeling van requirements op een schaal van 1 tot 5}
-    \end{table}
+\begin{table}[H]
+\centering
+\resizebox{\linewidth}{!}{% resize the table to fit page width
+\begin{tabular}{|ll|}
+\hline
+\multicolumn{1}{|l|}{\textbf{Requirements uit de requirementsanalyse}}                                                                                                                                                     & \textbf{Score tussen 1 en 5} \\ \hline
+\textbf{Must have}                                                                                                                                                                                                         &                              \\ \hline
+\multicolumn{1}{|l|}{Veiligheid en betrouwbaarheid: De tool moet voldoen aan de relevante beveiligingsnormen (Welbekende ISO-normen, data-encryptie, Europese GDPR-wetgeving compliance).}                                 & 0                            \\ \hline
+\multicolumn{1}{|l|}{Uitbreidbaarheid: De tool moet eenvoudig uitbreidbaar zijn met nieuwe modules en integraties naarmate de organisatie groeit.}                                                                         & 0                            \\ \hline
+\multicolumn{1}{|l|}{Integratie van meerdere systemen: Het platform moet in staat zijn om verschillende applicaties en systemen met elkaar te verbinden (zoals ERP, CRM, HRM, legacy-systemen, databases) met elkaar te verbinden.} & 0                            \\ \hline
+\multicolumn{1}{|l|}{Automatisering van processen: Manuele administratieve taken moeten geautomatiseerd kunnen worden om fouten te verminderen en bepaalde processen te versnellen.}                                       & 0                            \\ \hline
+\multicolumn{1}{|l|}{Data-transformatie: Het platform moet data makkelijk kunnen converteren tussen verschillende formaten en structuren (bijv. XML ↔ JSON, CSV ↔ database records).}                                      & 0                            \\ \hline
+\multicolumn{1}{|l|}{Monitoring en logging: Het systeem moet real-time monitoring en logboek functionaliteiten bieden om fouten en prestaties bij te houden.}                                                              & 0                            \\ \hline
+\textbf{Should have}                                                                                                                                                                                                       &                              \\ \hline
+\multicolumn{1}{|l|}{Kostenbeheersing: De tool moet betaalbaar zijn met een transparant kostenmodel (licenties, onderhoud, implementatie).}                                                                                & 0                            \\ \hline
+\multicolumn{1}{|l|}{Schaalbaarheid: De tool moet eenvoudig schaalbaar zijn naargelang de wensen van de organisatie.}                                                                                                      & 0                            \\ \hline
+\multicolumn{1}{|l|}{Connectoren en adapters: Het platform moet kant-en-klare connectoren bieden voor veelgebruikte systemen (bijv. SAP, Microsoft Dynamics, Oracle).}                                                     & 0                            \\ \hline
+\multicolumn{1}{|l|}{Prestaties: De tool moet performant zijn bij het uitvoeren van bepaalde veelgebruikte data integraties, maar niet alle data integratie processen.}                                                    & 0                            \\ \hline
+\multicolumn{1}{|l|}{Onderhoudsvriendelijkheid: De tool moet eenvoudig te updaten en te onderhouden zijn met minimale downtime.}                                                                                           & 0                            \\ \hline
+\textbf{Could have}                                                                                                                                                                                                        &                              \\ \hline
+\multicolumn{1}{|l|}{Hybrid en multi-cloud ondersteuning: Het platform moet applicaties kunnen integreren die draaien in verschillende omgevingen (on-premise, private cloud, public cloud).}                              & 0                            \\ \hline
+\multicolumn{1}{|l|}{Low-code / no-code interface: Het platform beschikt over een low-code of no-code interface voor het aanmaken van data integraties.}                                                                   & 0                            \\ \hline
+\multicolumn{1}{|l|}{\textbf{Gemiddelde}}                                                                                                                                                                                  & 0                            \\ \hline
+\multicolumn{1}{|l|}{\textbf{Mediaan}}                                                                                                                                                                                     & 0                            \\ \hline
+\end{tabular}
+}
+\caption{Zapier: Beoordeling van requirements op een schaal van 1 tot 5}
+\end{table}
+
+\end{landscape}

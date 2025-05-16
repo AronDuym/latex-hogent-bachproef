@@ -1,21 +1,17 @@
 \chapter{\IfLanguageName{dutch}{Microsoft Power Automate}{Microsoft Power Automate}}
 \label{ch:Microsoft}
 
-De laatste integratie tool waarvan de resultaten zullen besproken worden is Microsoft Power Automate. Hieronder worden de requirements individueel besproken en krijgen ze hun score toegewezen. Op het einde van het hoofdstuk worden alle requirements en hun scores samengevat en weergegeven in een tabel met enkele extra berekeningen om het vergelijkingsproces te vereenvoudigen.
+De laatste integratie tool waarvan de resultaten zullen besproken worden is Microsoft Power Automate. Hieronder worden de requirements individueel besproken en krijgen ze een score tussen 1 (voldoet niet aan de verwachtingen) en 5 (voldoet aan alle verwachtingen) toegewezen. Op het einde van het hoofdstuk worden alle requirements en hun scores samengevat en weergegeven in een tabel met enkele extra berekeningen om het vergelijkingsproces te vereenvoudigen.
 
 \section{Requirements}%
 \label{RequirementsMicrosoft}
 
+Om deze review iets vlotter leesbaar te maken zal Microsoft Power Automate afgekort worden tot Microsoft of MicrosoftPA gedurende deze review.
+
 \subsection{Must have}%
 \label{MustHaveMicrosoft}
 
-\textbf{Veiligheid en betrouwbaarheid: De tool moet voldoen aan de relevante beveiligingsnormen.}
-
-\vspace{\baselineskip}
-
-\vspace{\baselineskip}
-
-\textbf{Kostenbeheersing: De tool moet betaalbaar zijn met een transparant kostenmodel (licenties, onderhoud, implementatie).}
+\textbf{Veiligheid en betrouwbaarheid: De tool moet voldoen aan de relevante beveiligingsnormen (Welbekende ISO-normen, data-encryptie, Europese GDPR-wetgeving compliance).}
 
 \vspace{\baselineskip}
 
@@ -31,15 +27,7 @@ De laatste integratie tool waarvan de resultaten zullen besproken worden is Micr
 
 \vspace{\baselineskip}
 
-\textbf{Schaalbaarheid: De tool moet eenvoudig schaalbaar zijn naargelang de wensen van de organisatie.}
-
-\vspace{\baselineskip}
-
-
-
-\vspace{\baselineskip}
-
-\textbf{Integratie van meerdere systemen: Het platform moet in staat zijn om verschillende applicaties en met elkaar te verbinden (zoals ERP, CRM, HRM, legacy-systemen, databases) met elkaar te verbinden.}
+\textbf{Integratie van meerdere systemen: Het platform moet in staat zijn om verschillende applicaties en systemen met elkaar te verbinden (zoals ERP, CRM, HRM, legacy-systemen, databases) met elkaar te verbinden.}
 
 \vspace{\baselineskip}
 
@@ -54,24 +42,6 @@ De laatste integratie tool waarvan de resultaten zullen besproken worden is Micr
 
 
 \vspace{\baselineskip}
-
-\textbf{Connectoren en adapters: Het platform moet kant-en-klare connectoren bieden voor veelgebruikte systemen (bijv. SAP, Microsoft Dynamics, Oracle).}
-
-\vspace{\baselineskip}
-
-
-
-\subsection{Should have}%
-\label{ShouldHaveMicrosoft}
-
-\textbf{Prestaties: De tool moet performant zijn.}
-
-\vspace{\baselineskip}
-
-
-
-\vspace{\baselineskip}
-
 \textbf{Data-transformatie: Het platform moet data makkelijk kunnen converteren tussen verschillende formaten en structuren (bijv. XML ↔ JSON, CSV ↔ database records).}
 
 \vspace{\baselineskip}
@@ -80,14 +50,62 @@ De laatste integratie tool waarvan de resultaten zullen besproken worden is Micr
 
 \vspace{\baselineskip}
 
-\textbf{Hybrid en multi-cloud ondersteuning: Het platform moet applicaties kunnen integreren die draaien in verschillende omgevingen (on-premise, private cloud, public cloud).}
+
+\textbf{Monitoring en logging: Het systeem moet real-time monitoring en logboek functionaliteiten bieden om fouten en prestaties bij te houden.}
 
 \vspace{\baselineskip}
 
 
 
-\subsection{Could have}%
-\label{CouldHaveMicrosoft}
+\vspace{\baselineskip}
+
+\subsection{Should have}%
+\label{ShouldHaveMicrosoft}
+
+\textbf{Kostenbeheersing: De tool moet betaalbaar zijn met een transparant kostenmodel (licenties, onderhoud, implementatie).}
+
+\vspace{\baselineskip}
+
+Op vlak van prijstransparantie scoort Microsoft vrij goed. Het maakt gebruik van een abonnementsstructuur waarbij alle betalende opties een vaste zichtbare prijs tonen. Het jammere bij deze abonnementsstructuur is dat deze abonnementen enkel op jaarbasis te verkrijgen zijn, wat zorgt voor een enorme beperking in flexibiliteit.  De prijzen voor deze service lijken ook langs de hogere kant te liggen als er niet gekozen wordt voor het individuele abonnement. Het positieve hierbij is wel dat er geen verbruikskosten worden gerekend bovenop de basisprijs.
+
+\vspace{\baselineskip}
+
+De abonnementsstructuur bestaat uit 3 opties waaruit de klant kan kiezen, elk aangepast naar de mate van specifieke doelgroepen. Hieronder worden de 3 abonnement modellen kort toegelicht voor een idee te geven van hun schaal en wat ze exact aanbieden:
+
+\begin{itemize}
+    \item Power Automate Premium: \$15.00 per gebruiker per maand op jaarbasis. Gericht naar individuele personen.
+    \item Power Automate Process: \$150.00 per bot per maand op jaarbasis. Gericht naar bedrijven die hun belangrijke bedrijfsprocessen willen automatiseren.
+    \item Power Automate Hosted Process: \$215.00 per bot per maand op jaarbasis. Gericht naar bedrijven die hun belangrijke bedrijfsprocessen willen automatiseren aan de hand van een virtuele machine dat gehost wordt op het Microsoft Azure platform.
+\end{itemize}
+
+Tenslotte is er ook de mogelijkheid om MicrosoftPA gratis voor 30 tot 90 dagen uit te proberen om een inkijk te geven in het ecosysteem van MicrosoftPA. Na deze periode wordt het trial-account behouden, maar worden alle flows met premium features stopgezet en wordt het account omgezet naar een gratis versie.
+
+Voor dit requirement scoort Microsoft een 3.
+
+\vspace{\baselineskip}
+
+\textbf{Schaalbaarheid: De tool moet eenvoudig schaalbaar zijn naargelang de wensen van de organisatie.}
+
+\vspace{\baselineskip}
+
+
+
+\vspace{\baselineskip}
+
+\textbf{Connectoren en adapters: Het platform moet kant-en-klare connectoren bieden voor veelgebruikte systemen (bijv. SAP, Microsoft Dynamics, Oracle).}
+\vspace{\baselineskip}
+
+
+
+\vspace{\baselineskip}
+
+\textbf{Prestaties: De tool moet performant zijn bij het uitvoeren van bepaalde veelgebruikte data integraties, maar niet alle data integratie processen.}
+
+\vspace{\baselineskip}
+
+
+
+\vspace{\baselineskip}
 
 \textbf{Onderhoudsvriendelijkheid: De tool moet eenvoudig te updaten en te onderhouden zijn met minimale downtime.}
 
@@ -97,40 +115,62 @@ De laatste integratie tool waarvan de resultaten zullen besproken worden is Micr
 
 \vspace{\baselineskip}
 
-\textbf{Monitoring en logging: Het systeem moet real-time monitoring en logboek functionaliteiten bieden om fouten en prestaties bij te houden.}
+\subsection{Could have}%
+\label{CouldHaveMicrosoft}
+
+\textbf{Hybrid en multi-cloud ondersteuning: Het platform moet applicaties kunnen integreren die draaien in verschillende omgevingen (on-premise, private cloud, public cloud).}
 
 \vspace{\baselineskip}
+
+
+
+\vspace{\baselineskip}
+
+\textbf{Low-code / no-code interface: Het platform beschikt over een low-code of no-code interface voor het aanmaken van data integraties.}
+
+\vspace{\baselineskip}
+
+MicrosoftPA biedt sterke low-code capaciteiten en een gebruiksvriendelijk interface die veel integraties mogelijk maakt zonder diepgaande technische kennis. Langs de no-code kant lijkt het requirement niet volledig haalbaar bij complexere scenario's en voor meer geadvanceerde data integraties is technische expertise tamelijk nodig.
+
+Voor dit requirement scoort Microsoft een 4.
+
+\newpage
+
+\begin{landscape}
+
+
 
 \subsection{Eindoverzicht}%
 \label{EindoverzichtMicrosoft}
 
-\begin{table}[htbp]
-    \centering
-    \resizebox{\textwidth}{!}{%
-    \begin{tabular}{|ll|}
-    \hline
-    \multicolumn{1}{|l|}{\textbf{Requirements uit de requirementsanalyse}}                                                                                                                                                     & \textbf{Score tussen 1 en 5} \\ \hline
-    \textbf{Must have}                                                                                                                                                                                                         &                              \\ \hline
-    \multicolumn{1}{|l|}{Veiligheid en betrouwbaarheid: De tool moet voldoen aan de relevante beveiligingsnormen.}                                                                                                             &                              \\ \hline
-    \multicolumn{1}{|l|}{Kostenbeheersing: De tool moet betaalbaar zijn met een transparant kostenmodel (licenties, onderhoud, implementatie).}                                                                                &                              \\ \hline
-    \multicolumn{1}{|l|}{Uitbreidbaarheid: De tool moet eenvoudig uitbreidbaar zijn met nieuwe modules en integraties naarmate de organisatie groeit.}                                                                         &                              \\ \hline
-    \multicolumn{1}{|l|}{Schaalbaarheid: De tool moet eenvoudig schaalbaar zijn naargelang de wensen van de organisatie.}                                                                                                      &                              \\ \hline
-    \multicolumn{1}{|l|}{Integratie van meerdere systemen: Het platform moet in staat zijn om verschillende applicaties en met elkaar te verbinden (zoals ERP, CRM, HRM, legacy-systemen, databases) met elkaar te verbinden.} &                              \\ \hline
-    \multicolumn{1}{|l|}{Automatisering van processen: Manuele administratieve taken moeten geautomatiseerd kunnen worden om fouten te verminderen en bepaalde processen te versnellen.}                                       &                              \\ \hline
-    \multicolumn{1}{|l|}{Connectoren en adapters: Het platform moet kant-en-klare connectoren bieden voor veelgebruikte systemen (bijv. SAP, Microsoft Dynamics, Oracle).}                                                     &                              \\ \hline
-    \textbf{Should have}                                                                                                                                                                                                       &                              \\ \hline
-    \multicolumn{1}{|l|}{Prestaties: De tool moet performant zijn.}                                                                                                                                                            &                              \\ \hline
-    \multicolumn{1}{|l|}{Data-transformatie: Het platform moet data makkelijk kunnen converteren tussen verschillende formaten en structuren (bijv. XML ↔ JSON, CSV ↔ database records).}                                      &                              \\ \hline
-    \multicolumn{1}{|l|}{Hybrid en multi-cloud ondersteuning: Het platform moet applicaties kunnen integreren die draaien in verschillende omgevingen (on-premise, private cloud, public cloud).}                              &                              \\ \hline
-    \textbf{Could have}                                                                                                                                                                                                        &                              \\ \hline
-    \multicolumn{1}{|l|}{Onderhoudsvriendelijkheid: De tool moet eenvoudig te updaten en te onderhouden zijn met minimale downtime.}                                                                                           &                              \\ \hline
-    \multicolumn{1}{|l|}{Monitoring en logging: Het systeem moet real-time monitoring en logboek functionaliteiten bieden om fouten en prestaties bij te houden.}                                                              &                              \\ \hline
-    \multicolumn{1}{|l|}{\textbf{Gemiddelde}}                                                                                                                                                                                  &                              \\ \hline
-    \multicolumn{1}{|l|}{\textbf{Mediaan}}                                                                                                                                                                                     &                              \\ \hline
-    \multicolumn{1}{|l|}{\textbf{Standaardafwijking}}                                                                                                                                                                          &                              \\ \hline
-    \multicolumn{1}{|l|}{\textbf{Variatiecoëfficient}}                                                                                                                                                                         &                              \\ \hline
-    \end{tabular}%
-    }
-    \caption{Microsoft Power Automate: Beoordeling van requirements op een schaal van 1 tot 5}
-    \end{table}
+\begin{table}[H]
+\centering
+\resizebox{\linewidth}{!}{% resize the table to fit page width
+\begin{tabular}{|ll|}
+\hline
+\multicolumn{1}{|l|}{\textbf{Requirements uit de requirementsanalyse}}                                                                                                                                                     & \textbf{Score tussen 1 en 5} \\ \hline
+\textbf{Must have}                                                                                                                                                                                                         &                              \\ \hline
+\multicolumn{1}{|l|}{Veiligheid en betrouwbaarheid: De tool moet voldoen aan de relevante beveiligingsnormen (Welbekende ISO-normen, data-encryptie, Europese GDPR-wetgeving compliance).}                                 & 0                            \\ \hline
+\multicolumn{1}{|l|}{Uitbreidbaarheid: De tool moet eenvoudig uitbreidbaar zijn met nieuwe modules en integraties naarmate de organisatie groeit.}                                                                         & 0                            \\ \hline
+\multicolumn{1}{|l|}{Integratie van meerdere systemen: Het platform moet in staat zijn om verschillende applicaties en systemen met elkaar te verbinden (zoals ERP, CRM, HRM, legacy-systemen, databases) met elkaar te verbinden.} & 0                            \\ \hline
+\multicolumn{1}{|l|}{Automatisering van processen: Manuele administratieve taken moeten geautomatiseerd kunnen worden om fouten te verminderen en bepaalde processen te versnellen.}                                       & 0                            \\ \hline
+\multicolumn{1}{|l|}{Data-transformatie: Het platform moet data makkelijk kunnen converteren tussen verschillende formaten en structuren (bijv. XML ↔ JSON, CSV ↔ database records).}                                      & 0                            \\ \hline
+\multicolumn{1}{|l|}{Monitoring en logging: Het systeem moet real-time monitoring en logboek functionaliteiten bieden om fouten en prestaties bij te houden.}                                                              & 0                            \\ \hline
+\textbf{Should have}                                                                                                                                                                                                       &                              \\ \hline
+\multicolumn{1}{|l|}{Kostenbeheersing: De tool moet betaalbaar zijn met een transparant kostenmodel (licenties, onderhoud, implementatie).}                                                                                & 0                            \\ \hline
+\multicolumn{1}{|l|}{Schaalbaarheid: De tool moet eenvoudig schaalbaar zijn naargelang de wensen van de organisatie.}                                                                                                      & 0                            \\ \hline
+\multicolumn{1}{|l|}{Connectoren en adapters: Het platform moet kant-en-klare connectoren bieden voor veelgebruikte systemen (bijv. SAP, Microsoft Dynamics, Oracle).}                                                     & 0                            \\ \hline
+\multicolumn{1}{|l|}{Prestaties: De tool moet performant zijn bij het uitvoeren van bepaalde veelgebruikte data integraties, maar niet alle data integratie processen.}                                                    & 0                            \\ \hline
+\multicolumn{1}{|l|}{Onderhoudsvriendelijkheid: De tool moet eenvoudig te updaten en te onderhouden zijn met minimale downtime.}                                                                                           & 0                            \\ \hline
+\textbf{Could have}                                                                                                                                                                                                        &                              \\ \hline
+\multicolumn{1}{|l|}{Hybrid en multi-cloud ondersteuning: Het platform moet applicaties kunnen integreren die draaien in verschillende omgevingen (on-premise, private cloud, public cloud).}                              & 0                            \\ \hline
+\multicolumn{1}{|l|}{Low-code / no-code interface: Het platform beschikt over een low-code of no-code interface voor het aanmaken van data integraties.}                                                                   & 0                            \\ \hline
+\multicolumn{1}{|l|}{\textbf{Gemiddelde}}                                                                                                                                                                                  & 0                            \\ \hline
+\multicolumn{1}{|l|}{\textbf{Mediaan}}                                                                                                                                                                                     & 0                            \\ \hline
+\end{tabular}
+}
+\caption{Microsoft Power Automate: Beoordeling van requirements op een schaal van 1 tot 5}
+\end{table}
+
+\end{landscape}
 
