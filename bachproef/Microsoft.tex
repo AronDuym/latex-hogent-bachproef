@@ -15,7 +15,10 @@ Om deze review iets vlotter leesbaar te maken zal Microsoft Power Automate afgek
 
 \vspace{\baselineskip}
 
+Microsoft is wereldwijd bekend om hun veilige en betrouwbare producten en diensten. Hun data integratie tool Microsoft Power Automate draait in de cloud op het Microsoft Azure-platform. Hierdoor beschikt het data integratie platform over verschillende ISO-normen, sterke en flexibele data-encryptie en voldoet het platform ook aan de eisen van de Europese GDPR-wetgeving. Op vlak van ISO-normen beschikt MicrosoftPI over ISO/IEC 27001 voor informatiebeveiliging management, ISO/IEC 27018 voor de bescherming van persoonlijke gegevens in de cloud en ISO/IEC 27701 voor Privacy Information Management. Op vlak van data-encryptie gebruikt MicrosoftPA "in transit" (TLS 1.2+) en "at rest" (Azure Storage Service Encryption) om data te beveiligen. Microsoft biedt ook de mogelijkheid om zelf versleuteling in te stellen met persoonlijke encryptiesleutels (Customer Managed Keys). Voor autorisatie maakt Microsoft ook gebruik van Role-based access control (RBAC) voor een overzichtelijke en veilige toegangscontrole.
 
+
+Voor dit requirement scoort Microsoft een 5.
 
 \vspace{\baselineskip}
 
@@ -23,6 +26,10 @@ Om deze review iets vlotter leesbaar te maken zal Microsoft Power Automate afgek
 
 \vspace{\baselineskip}
 
+MicrosoftPA beschikt over een ruim aanbod aan mogelijkheden op vlak van uitbreidingen. Zo kan het platform gebruik maken van verschillende Microsoft enterprise-tools om de kwaliteit en functionaliteit van de service te verbeteren. Voor deze services zijn vaak wel meerdere of hogere licenties nodig. MicrosoftPA geeft wel de mogelijkheid om eigen custom connectoren aan te maken. Hiermee kunnen de beschikbare data integraties kunnen worden uitgebreid voor bepaalde maatwerk data-integraties. In hoeverre de standaard licenties voor MicrosoftPA uitbreidbaarheid toelaten is onzeker. De limiet voor uitbreidbaarheid lijkt gekoppeld te zijn aan het plafond van de gekozen licentie, wat beperkingen kan opleggen op vlak van flexibiliteit. 
+
+
+Voor dit requirement scoort Microsoft een 4.
 
 
 \vspace{\baselineskip}
@@ -39,14 +46,19 @@ Om deze review iets vlotter leesbaar te maken zal Microsoft Power Automate afgek
 
 \vspace{\baselineskip}
 
+MicrosoftPA beschikt over verschillende manieren voor de uitvoering van data integraties. Het beschikt over een Automated cloud flow voor de automatische uitvoering van data integraties aan de hand van een vooraf bepaalde trigger, een Instant cloud flow voor het manueel triggeren van een data integratie of een scheduled cloud flow waarbij de gebruiker zelf bepaalt wanneer en hoe een data integratie wordt uitgevoerd. Tenslotte beschikt het ook nog over een desktop flow voor het automatiseren van data integraties op de desktop omgeving in plaats van in de cloud. MicrosoftPA biedt ook een tool aan dat deze processen kan evalueren en optimaliseren indien de gebruiker dit wenst.
 
+
+Voor dit requirement scoort Microsoft een 4.
 
 \vspace{\baselineskip}
 \textbf{Data-transformatie: Het platform moet data makkelijk kunnen converteren tussen verschillende formaten en structuren (bijv. XML ↔ JSON, CSV ↔ database records).}
 
 \vspace{\baselineskip}
 
+MicrosoftPA biedt een basisfunctionaliteit aan voor data-transformatie die goed is voor eenvoudige of simpele scenario’s met een lage complexiteit. Bij grootschalige of complexe data-transformaties kunnen er soms tekortkomingen zijn door een gebrek aan een dedicated conversie tool. Ook bij geneste data kunnen er complicaties tevoorschijn komen. Tenslotte biedt MicrosoftPA een slechte ondersteuning voor data afkomstig uit een CSV. Het platform beschikt niet over een native actie voor het omzetten van CSV data naar andere dataformaten. Hiervoor zal een eigen custom parsing script geschreven moeten worden.
 
+Voor dit requirement scoort Microsoft een 3.
 
 \vspace{\baselineskip}
 
@@ -55,7 +67,9 @@ Om deze review iets vlotter leesbaar te maken zal Microsoft Power Automate afgek
 
 \vspace{\baselineskip}
 
+MicrosoftPA biedt degelijke monitoring en logging aan bij individuele data integraties voor het evalueren van operationele data integraties en het monitoren van fouten. Er zijn echter wel beperkingen bij het monitoren en loggen van data integraties op grote schaal door een gebrek aan een centrale monitoring en logging omgeving. Voor grote of complexe omgevingen zijn aanvullende tools of integraties nodig om aan globale monitoring en logging te kunnen doen.
 
+Voor dit requirement scoort Microsoft een 3.
 
 \vspace{\baselineskip}
 
@@ -80,7 +94,7 @@ De abonnementsstructuur bestaat uit 3 opties waaruit de klant kan kiezen, elk aa
 
 Tenslotte is er ook de mogelijkheid om MicrosoftPA gratis voor 30 tot 90 dagen uit te proberen om een inkijk te geven in het ecosysteem van MicrosoftPA. Na deze periode wordt het trial-account behouden, maar worden alle flows met premium features stopgezet en wordt het account omgezet naar een gratis versie.
 
-Voor dit requirement scoort Microsoft een 3.
+Voor dit requirement scoort Microsoft een 4.
 
 \vspace{\baselineskip}
 
@@ -88,14 +102,22 @@ Voor dit requirement scoort Microsoft een 3.
 
 \vspace{\baselineskip}
 
+Het is onzeker hoe schaalbaar MicrosoftPA is buiten de vaste licentiemodellen. Volgens de verwoording van Microsoft zelf lijkt de schaalbaarheid vast te hangen aan het standaard licentiemodel en is er geen mogelijkheid om te schalen buiten de vernoemde licentiemodellen. Het is wel mogelijk om een bepaalde vorm van schaalbaarheid toe te passen door MicrosoftPA te gebruiken in samenwerking met andere Microsoft enterprise -tools. Tenslotte kunnen er ook bepaalde beperkingen zijn op bepaalde connectoren in de vorm van request-limieten en doorvoersnelheid. Dit kan mogelijks voor problemen zorgen bij grootschalige bedrijven die op een constante basis gebruikmaken van bepaalde connectoren. Dit alles zorgt voor een zeer beperkte flexibiliteit op vlak van schaalbaarheid indien de licentiemodellen niet ideaal zijn voor de schaal van het bedrijf.
 
+
+Voor dit requirement scoort Microsoft een 3.
 
 \vspace{\baselineskip}
 
 \textbf{Connectoren en adapters: Het platform moet kant-en-klare connectoren bieden voor veelgebruikte systemen (bijv. SAP, Microsoft Dynamics, Oracle).}
 \vspace{\baselineskip}
 
+MicrosoftPA beschikt over een ruim aanbod aan kant-en-klare connectoren om con-
+necties te maken met welgekende systemen zoals SAP, Amazon, Microsoft Dyna-
+mics, Oracle, Salesforce, Azure en andere grote bedrijven. Desondanks beschikt ook Microsoft niet over een connector om een rechtstreekse verbinding te maken met Atlassian Tempo en zal hiervoor zelf een connector aangemaakt worden. Waar MicrosoftPA vooral in uitblinkt is bij de connectie binnen het eigen Microsoft-ecosysteem hierbij worden talloze connectoren voorzien voor de verschillende Microsoft systemen met elkaar te verbinden. Voor meer niche en minder populaire systemen waar Microsoft geen connector voor heeft, biedt het de mogelijkheid om zelf je eigen custom connectoren aan te maken voor het gebruik bij de data integraties.
 
+
+Voor dit requirement scoort Microsoft een 4.
 
 \vspace{\baselineskip}
 
@@ -103,7 +125,9 @@ Voor dit requirement scoort Microsoft een 3.
 
 \vspace{\baselineskip}
 
+Power Automate biedt goede prestaties voor veelvoorkomende en lichtgewicht integraties, zeker binnen het Microsoft-ecosysteem. Voor zwaardere of grootschalige data integraties kunnen de prestaties tegenvallen vanwege limieten of haperingen bij het verwerken van deze data. Deze limieten en haperingen kunnen op hun beurt ervoor zorgen dat data integraties vertragen of zelfs voor zorgen dat er fouten ontstaan in het verwerkingsproces.
 
+Voor dit requirement scoort Microsoft een 3.
 
 \vspace{\baselineskip}
 
@@ -111,7 +135,10 @@ Voor dit requirement scoort Microsoft een 3.
 
 \vspace{\baselineskip}
 
+Microsoft biedt een service level agreement van 99.99 \% uptime aan, maar beschikt enkel over basisfunctionaliteiten op vlak van revisie geschiedenis en toont het enkel wie de laatste wijzigingen heeft aangebracht voor publicatie, maar beschikt het niet over een diepgaand of gedetailleerde revisiegeschiedenis of wijzigingslogs. Indien een bedrijf deze functionaliteiten toch wenst kan er wel gebruikgemaakt worden van integraties met Power Platform ALM of Microsoft 365 Compliance Center.
 
+
+Voor dit requirement scoort Microsoft een 3.
 
 \vspace{\baselineskip}
 
@@ -122,7 +149,10 @@ Voor dit requirement scoort Microsoft een 3.
 
 \vspace{\baselineskip}
 
+Microsoft Power Automate ondersteunt on-premise, hybride en multi-cloud omgevingen. Voor on-premise integratie biedt Microsoft ondersteuning voor on-premise systemen via de On-premises Data Gateway. Hiermee kunnen workflows data ophalen of verzenden naar interne systemen zoals lokale databases, ERP’s, of fileshares. Voor cloud omgevingen biedt Microsoft uitstekende verbindingen voor alle data-integraties binnen het Microsoft ecosysteem. Voor andere cloud omgevingen biedt MicrosoftPA integratiemogelijkheden met applicaties zolang ze via API’s of connectors verbonden kunnen worden. Helaas zijn deze integraties buiten het Microsoft systeem minder diepgaand en beperkter dan de Microsoft cloud omgevingen. 
 
+
+Voor dit requirement scoort Microsoft een 4.
 
 \vspace{\baselineskip}
 
@@ -150,23 +180,23 @@ Voor dit requirement scoort Microsoft een 4.
 \hline
 \multicolumn{1}{|l|}{\textbf{Requirements uit de requirementsanalyse}}                                                                                                                                                     & \textbf{Score tussen 1 en 5} \\ \hline
 \textbf{Must have}                                                                                                                                                                                                         &                              \\ \hline
-\multicolumn{1}{|l|}{Veiligheid en betrouwbaarheid: De tool moet voldoen aan de relevante beveiligingsnormen (Welbekende ISO-normen, data-encryptie, Europese GDPR-wetgeving compliance).}                                 & 0                            \\ \hline
-\multicolumn{1}{|l|}{Uitbreidbaarheid: De tool moet eenvoudig uitbreidbaar zijn met nieuwe modules en integraties naarmate de organisatie groeit.}                                                                         & 0                            \\ \hline
-\multicolumn{1}{|l|}{Integratie van meerdere systemen: Het platform moet in staat zijn om verschillende applicaties en systemen met elkaar te verbinden (zoals ERP, CRM, HRM, legacy-systemen, databases) met elkaar te verbinden.} & 0                            \\ \hline
-\multicolumn{1}{|l|}{Automatisering van processen: Manuele administratieve taken moeten geautomatiseerd kunnen worden om fouten te verminderen en bepaalde processen te versnellen.}                                       & 0                            \\ \hline
-\multicolumn{1}{|l|}{Data-transformatie: Het platform moet data makkelijk kunnen converteren tussen verschillende formaten en structuren (bijv. XML ↔ JSON, CSV ↔ database records).}                                      & 0                            \\ \hline
-\multicolumn{1}{|l|}{Monitoring en logging: Het systeem moet real-time monitoring en logboek functionaliteiten bieden om fouten en prestaties bij te houden.}                                                              & 0                            \\ \hline
+\multicolumn{1}{|l|}{Veiligheid en betrouwbaarheid: De tool moet voldoen aan de relevante beveiligingsnormen (Welbekende ISO-normen, data-encryptie, Europese GDPR-wetgeving compliance).}                                 & 5                            \\ \hline
+\multicolumn{1}{|l|}{Uitbreidbaarheid: De tool moet eenvoudig uitbreidbaar zijn met nieuwe modules en integraties naarmate de organisatie groeit.}                                                                         & 4                            \\ \hline
+\multicolumn{1}{|l|}{Integratie van meerdere systemen: Het platform moet in staat zijn om verschillende applicaties en systemen met elkaar te verbinden (zoals ERP, CRM, HRM, legacy-systemen, databases) met elkaar te verbinden.} & 3                            \\ \hline
+\multicolumn{1}{|l|}{Automatisering van processen: Manuele administratieve taken moeten geautomatiseerd kunnen worden om fouten te verminderen en bepaalde processen te versnellen.}                                       & 4                            \\ \hline
+\multicolumn{1}{|l|}{Data-transformatie: Het platform moet data makkelijk kunnen converteren tussen verschillende formaten en structuren (bijv. XML ↔ JSON, CSV ↔ database records).}                                      & 3                            \\ \hline
+\multicolumn{1}{|l|}{Monitoring en logging: Het systeem moet real-time monitoring en logboek functionaliteiten bieden om fouten en prestaties bij te houden.}                                                              & 3                            \\ \hline
 \textbf{Should have}                                                                                                                                                                                                       &                              \\ \hline
-\multicolumn{1}{|l|}{Kostenbeheersing: De tool moet betaalbaar zijn met een transparant kostenmodel (licenties, onderhoud, implementatie).}                                                                                & 0                            \\ \hline
-\multicolumn{1}{|l|}{Schaalbaarheid: De tool moet eenvoudig schaalbaar zijn naargelang de wensen van de organisatie.}                                                                                                      & 0                            \\ \hline
-\multicolumn{1}{|l|}{Connectoren en adapters: Het platform moet kant-en-klare connectoren bieden voor veelgebruikte systemen (bijv. SAP, Microsoft Dynamics, Oracle).}                                                     & 0                            \\ \hline
-\multicolumn{1}{|l|}{Prestaties: De tool moet performant zijn bij het uitvoeren van bepaalde veelgebruikte data integraties, maar niet alle data integratie processen.}                                                    & 0                            \\ \hline
-\multicolumn{1}{|l|}{Onderhoudsvriendelijkheid: De tool moet eenvoudig te updaten en te onderhouden zijn met minimale downtime.}                                                                                           & 0                            \\ \hline
+\multicolumn{1}{|l|}{Kostenbeheersing: De tool moet betaalbaar zijn met een transparant kostenmodel (licenties, onderhoud, implementatie).}                                                                                & 4                            \\ \hline
+\multicolumn{1}{|l|}{Schaalbaarheid: De tool moet eenvoudig schaalbaar zijn naargelang de wensen van de organisatie.}                                                                                                      & 3                            \\ \hline
+\multicolumn{1}{|l|}{Connectoren en adapters: Het platform moet kant-en-klare connectoren bieden voor veelgebruikte systemen (bijv. SAP, Microsoft Dynamics, Oracle).}                                                     & 4                            \\ \hline
+\multicolumn{1}{|l|}{Prestaties: De tool moet performant zijn bij het uitvoeren van bepaalde veelgebruikte data integraties, maar niet alle data integratie processen.}                                                    & 3                            \\ \hline
+\multicolumn{1}{|l|}{Onderhoudsvriendelijkheid: De tool moet eenvoudig te updaten en te onderhouden zijn met minimale downtime.}                                                                                           & 3                            \\ \hline
 \textbf{Could have}                                                                                                                                                                                                        &                              \\ \hline
-\multicolumn{1}{|l|}{Hybrid en multi-cloud ondersteuning: Het platform moet applicaties kunnen integreren die draaien in verschillende omgevingen (on-premise, private cloud, public cloud).}                              & 0                            \\ \hline
-\multicolumn{1}{|l|}{Low-code / no-code interface: Het platform beschikt over een low-code of no-code interface voor het aanmaken van data integraties.}                                                                   & 0                            \\ \hline
-\multicolumn{1}{|l|}{\textbf{Gemiddelde}}                                                                                                                                                                                  & 0                            \\ \hline
-\multicolumn{1}{|l|}{\textbf{Mediaan}}                                                                                                                                                                                     & 0                            \\ \hline
+\multicolumn{1}{|l|}{Hybrid en multi-cloud ondersteuning: Het platform moet applicaties kunnen integreren die draaien in verschillende omgevingen (on-premise, private cloud, public cloud).}                              & 4                            \\ \hline
+\multicolumn{1}{|l|}{Low-code / no-code interface: Het platform beschikt over een low-code of no-code interface voor het aanmaken van data integraties.}                                                                   & 4                            \\ \hline
+\multicolumn{1}{|l|}{\textbf{Gemiddelde}}                                                                                                                                                                                  & 3,62                            \\ \hline
+\multicolumn{1}{|l|}{\textbf{Mediaan}}                                                                                                                                                                                     & 4                            \\ \hline
 \end{tabular}
 }
 \caption{Microsoft Power Automate: Beoordeling van requirements op een schaal van 1 tot 5}
